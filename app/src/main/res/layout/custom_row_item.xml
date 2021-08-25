@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/cardview"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/thumb_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/thumb_img"
+            android:layout_centerHorizontal="true"
+            android:background="#80000000"
+            android:padding="4dp"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="14sp"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="12sp"
+            android:layout_below="@+id/thumb_img" />
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
